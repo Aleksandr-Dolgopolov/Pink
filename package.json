@@ -1,0 +1,29 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "npm run build && gulp browserSync"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "browser-sync": "^2.26.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1"
+  }
+}

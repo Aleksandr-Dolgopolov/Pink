@@ -1,0 +1,118 @@
+.downloads {
+  position: relative;
+
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  background-color: #1d2631;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 120px;
+    left: 10px;
+  }
+}
+
+.downloads__inner {
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    width: 310px;
+  }
+}
+
+.downloads__slogan {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: inline-block;
+
+    width: 200px;
+    padding-bottom: 40px;
+    margin: 0;
+
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop) {
+    width: 250px;
+    padding-bottom: 60px;
+
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.downloads__download-btn {
+  width: 100%;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 58px;
+  }
+}
+
+.downloads__apps {
+  font-size: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.downloads__app {
+  display: inline-block;
+  margin: 0 16px;
+
+  width: 47px;
+  height: 56px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--apple {
+    background-image: url("../../img/icons/logo-apple.svg");
+  }
+
+  &--android {
+    background: url(../../img/icons/logo-android.svg) no-repeat center 8px;
+  }
+
+  &--windows {
+    background: url(../../img/icons/logo-microsoft.svg) no-repeat right 12px;
+  }
+}
+
+.downloads__desc {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+
+  @media (min-width: @desktop) {
+    font-size: 18px;
+  }
+}

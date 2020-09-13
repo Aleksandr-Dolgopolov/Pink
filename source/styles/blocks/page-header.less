@@ -1,0 +1,25 @@
+.page-header {
+  width: 100%;
+
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: @white;
+  z-index: 2;
+
+  &--full {
+    position: relative;
+    background-color: @blue-dark;
+  }
+}
+
+.page-header__wrapper {
+  position: relative;
+  width: 100%;
+
+  @media(min-width: @desktop) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
